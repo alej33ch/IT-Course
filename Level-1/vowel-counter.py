@@ -1,3 +1,7 @@
+phrase = input("Enter a sentence:")
+words = phrase.split()
+print(f"The sentence has {len(words)} words.")
+
 
 # Escribe un programa que cuente cuántas letras prohibidas hay en una frase. Las letras prohibidas son: a, u, i.
 frase = input("Escribe una frase:")
