@@ -30,4 +30,5 @@ Contributions are welcome! Please fork the repository and create a pull request.
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-![Python](python-cover.jpg)
+
+<img src="python-cover.jpg" alt="Python" width="100%" />
