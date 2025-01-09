@@ -1,3 +1,5 @@
+![Python](python-cover.jpg)
+
 # Python Practice Exercises
 
 This project contains a collection of Python exercises designed for developers of different skill levels. Each exercise is contained in its own file and focuses on a specific concept or problem.
