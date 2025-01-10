@@ -1,5 +1,5 @@
 from tkinter import Tk, Entry, Button, StringVar
-
+# nice calculotor!
 
 class Calculator:
     def __init__(self, master):
