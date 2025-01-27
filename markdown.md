@@ -1,4 +1,4 @@
-# Vorfall-Management Playbook 
+# Vorfall-Management Playbook
 
 ## 1. Erkennung des Vorfalls
 Wenn ein Vorfall von einem Mitarbeiter erkannt wird, muss folgendes Verfahren befolgt werden:
@@ -41,26 +41,49 @@ Nachdem der Vorfall gelöst wurde, führt das Team eine Post-Mortem-Analyse durc
 - **Aktualisierung der Sicherheitsverfahren**.
 - **Implementierung neuer Präventionsmassnahmen**, um zukünftige Vorfälle zu vermeiden.
 
+
 ---
-
-
 
 # Vorfall-Management Prozess
 
-
 ```mermaid
-%%{init: {"themeVariables": {"title": "Vorfallmanagement-Prozess"}}}%%
+%%{init: {"themeVariables": {"title": "Vorfallmanagement-Prozess", "nodeBorderRadius": "10", "edgeLabelBackground":"#ffffff", "tertiaryColor": "#FFEB3B"}}}%%
 graph TD
-    A[Erkennung des Vorfalls] -->|Benachrichtigung an IT| B(Analyse und Bestätigung)
-    B --> C{Schwere des Vorfalls}
-    C -->|Malware| D[Malware entfernen]
-    C -->|Unbefugter Zugriff| E[Zugang blockieren]
-    C -->|Sonstiges| F[Untersuchen]
-    D --> G[Systeme aktualisieren]
-    E --> H[Passwörter ändern]
-    F --> I[Überprüfung auf Sicherheitslücken]
-    G --> J[Desinfizieren von Geräten]
+    A[**Erkennung des Vorfalls**] -->|**Benachrichtigung an IT**| B[**Analyse und Bestätigung**]
+    B --> C{**Schwere des Vorfalls**}
+    
+    %% Farben für die Knoten
+    A -->|**Schritt 1: Vorfall Erkennen**| B[**Analyse & Bestätigung**]
+    C -->|**Malware entdeckt**| D[**Malware entfernen**]
+    C -->|**Unbefugter Zugriff**| E[**Zugang blockieren**]
+    C -->|**Untersuchung**| F[**Untersuchen**]
+
+    %% Schritte für Beseitigung
+    D --> G[**Systeme aktualisieren**]
+    E --> H[**Passwörter ändern**]
+    F --> I[**Überprüfung auf Sicherheitslücken**]
+
+    %% Wiederherstellung der Systeme
+    G --> J[**Desinfizieren von Geräten**]
     H --> J
     I --> J
-    J --> K[Wiederherstellung der Systeme]
-    K --> L[Nachbesprechung]
+
+    %% Wiederherstellung und Nachbesprechung
+    J --> K[**Wiederherstellung der Systeme**]
+    K --> L[**Nachbesprechung & Ursachenanalyse**]
+
+    %% Knotenfarben für unterschiedliche Phasen
+    classDef erkennung fill:#FFEB3B,stroke:#FF9800;
+    class A,B fill:#FFEB3B,stroke:#FF9800;
+    
+    classDef analyse fill:#8BC34A,stroke:#4CAF50;
+    class C,D,E,F fill:#8BC34A,stroke:#4CAF50;
+    
+    classDef beseitigung fill:#2196F3,stroke:#1976D2;
+    class G,H,I fill:#2196F3,stroke:#1976D2;
+    
+    classDef wiederherstellung fill:#FFC107,stroke:#FF9800;
+    class J,K fill:#FFC107,stroke:#FF9800;
+    
+    classDef nachbesprechung fill:#9E9E9E,stroke:#757575;
+    class L fill:#9E9E9E,stroke:#757575;
