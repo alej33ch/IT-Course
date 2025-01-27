@@ -48,35 +48,20 @@ Nachdem der Vorfall gelöst wurde, führt das Team eine Post-Mortem-Analyse durc
 
 ```mermaid
 graph TD
-    A[**Erkennung des Vorfalls**] -->|**Benachrichtigung an IT**| B[**Analyse und Bestätigung**]
-    B --> C{**Schwere des Vorfalls**}
+    A[Erkennung des Vorfalls] -->|Benachrichtigung an IT| B[Analyse und Bestätigung]
+    B --> C{Schwere des Vorfalls}
     
-    %% Fase de "Erkennung"
-    class A,B fill:#FFEB3B,stroke:#FF9800;
-    
-    %% Fase de "Analyse"
-    class C,D,E,F fill:#8BC34A,stroke:#4CAF50;
-    
-    %% Fase de "Beseitigung"
-    class G,H,I fill:#2196F3,stroke:#1976D2;
-    
-    %% Fase de "Wiederherstellung"
-    class J,K fill:#FFC107,stroke:#FF9800;
-    
-    %% Fase de "Nachbesprechung"
-    class L fill:#9E9E9E,stroke:#757575;
+    C -->|Malware entdeckt| D[Malware entfernen]
+    C -->|Unbefugter Zugriff| E[Zugang blockieren]
+    C -->|Untersuchung| F[Untersuchen]
 
-    C -->|**Malware entdeckt**| D[**Malware entfernen**]
-    C -->|**Unbefugter Zugriff**| E[**Zugang blockieren**]
-    C -->|**Untersuchung**| F[**Untersuchen**]
+    D --> G[Systeme aktualisieren]
+    E --> H[Passwörter ändern]
+    F --> I[Überprüfung auf Sicherheitslücken]
 
-    D --> G[**Systeme aktualisieren**]
-    E --> H[**Passwörter ändern**]
-    F --> I[**Überprüfung auf Sicherheitslücken**]
-
-    G --> J[**Desinfizieren von Geräten**]
+    G --> J[Desinfizieren von Geräten]
     H --> J
     I --> J
 
-    J --> K[**Wiederherstellung der Systeme**]
-    K --> L[**Nachbesprechung & Ursachenanalyse**]
+    J --> K[Wiederherstellung der Systeme]
+    K --> L[Nachbesprechung & Ursachenanalyse]
