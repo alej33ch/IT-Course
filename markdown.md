@@ -48,16 +48,21 @@ Nachdem der Vorfall gelöst wurde, führt das Team eine Post-Mortem-Analyse durc
 ## Vorfallmanagement-Prozess
 
 ```mermaid
-flowchart TD
-    A[Erkennung des Vorfalls]
-    B[Analyse und Bestätigung]
-    C[Eindämmung]
-    D[Beseitigung]
-    E[Wiederherstellung]
-    F[Nachbesprechung]
+graph TD
+    title Vorfallmanagement-Prozess
+    A[Erkennung des Vorfalls] -->|Benachrichtigung an IT| B(Analyse und Bestätigung)
+    B --> C{Schwere des Vorfalls}
+    C -->|Malware| D[Malware entfernen]
+    C -->|Unbefugter Zugriff| E[Zugang blockieren]
+    C -->|Sonstiges| F[Untersuchen]
+    D --> G[Systeme aktualisieren]
+    E --> H[Passwörter ändern]
+    F --> I[Überprüfung auf Sicherheitslücken]
+    G --> J[Desinfizieren von Geräten]
+    H --> J
+    I --> J
+    J --> K[Wiederherstellung der Systeme]
+    K --> L[Nachbesprechung]
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
+    classDef malware fill:#f9f,stroke:#333,stroke-width:4px;
+    class D, G, J malware;
