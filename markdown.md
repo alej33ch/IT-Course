@@ -47,7 +47,6 @@ Nachdem der Vorfall gelöst wurde, führt das Team eine Post-Mortem-Analyse durc
 
 # Vorfall-Management Prozess
 
-## Vorfallmanagement-Prozess
 
 ```mermaid
 %%{init: {"themeVariables": {"title": "Vorfallmanagement-Prozess"}}}%%
