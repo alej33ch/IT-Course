@@ -47,32 +47,11 @@ Nachdem der Vorfall gelöst wurde, führt das Team eine Post-Mortem-Analyse durc
 # Vorfall-Management Prozess
 
 ```mermaid
-%%{init: {"themeVariables": {"title": "Vorfallmanagement-Prozess", "nodeBorderRadius": "10", "edgeLabelBackground":"#ffffff", "tertiaryColor": "#FFEB3B"}}}%%
 graph TD
     A[**Erkennung des Vorfalls**] -->|**Benachrichtigung an IT**| B[**Analyse und Bestätigung**]
     B --> C{**Schwere des Vorfalls**}
     
     %% Farben für die Knoten
-    A -->|**Schritt 1: Vorfall Erkennen**| B[**Analyse & Bestätigung**]
-    C -->|**Malware entdeckt**| D[**Malware entfernen**]
-    C -->|**Unbefugter Zugriff**| E[**Zugang blockieren**]
-    C -->|**Untersuchung**| F[**Untersuchen**]
-
-    %% Schritte für Beseitigung
-    D --> G[**Systeme aktualisieren**]
-    E --> H[**Passwörter ändern**]
-    F --> I[**Überprüfung auf Sicherheitslücken**]
-
-    %% Wiederherstellung der Systeme
-    G --> J[**Desinfizieren von Geräten**]
-    H --> J
-    I --> J
-
-    %% Wiederherstellung und Nachbesprechung
-    J --> K[**Wiederherstellung der Systeme**]
-    K --> L[**Nachbesprechung & Ursachenanalyse**]
-
-    %% Knotenfarben für unterschiedliche Phasen
     classDef erkennung fill:#FFEB3B,stroke:#FF9800;
     class A,B fill:#FFEB3B,stroke:#FF9800;
     
@@ -87,3 +66,18 @@ graph TD
     
     classDef nachbesprechung fill:#9E9E9E,stroke:#757575;
     class L fill:#9E9E9E,stroke:#757575;
+
+    C -->|**Malware entdeckt**| D[**Malware entfernen**]
+    C -->|**Unbefugter Zugriff**| E[**Zugang blockieren**]
+    C -->|**Untersuchung**| F[**Untersuchen**]
+
+    D --> G[**Systeme aktualisieren**]
+    E --> H[**Passwörter ändern**]
+    F --> I[**Überprüfung auf Sicherheitslücken**]
+
+    G --> J[**Desinfizieren von Geräten**]
+    H --> J
+    I --> J
+
+    J --> K[**Wiederherstellung der Systeme**]
+    K --> L[**Nachbesprechung & Ursachenanalyse**]
