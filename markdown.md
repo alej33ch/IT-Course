@@ -4,7 +4,7 @@
 Wenn ein Vorfall von einem Mitarbeiter erkannt wird, muss folgendes Verfahren befolgt werden:
 
 - **Sofortige Benachrichtigung** an das IT-Team.
-- Details angeben, wie den Vorfalltyp, betroffene Systeme und mögliche Symptome.
+- Details angeben, wie den Vorfalltyp, betroffene Systeme und mögliche "Symptome".
 
 ## 2. Analyse und Bestätigung
 Das IT-Team führt eine erste Analyse durch, um die Schwere des Vorfalls zu bestimmen:
@@ -39,7 +39,7 @@ Nachdem der Vorfall gelöst wurde, führt das Team eine Post-Mortem-Analyse durc
 
 - **Identifizierung der Ursachen** des Vorfalls.
 - **Aktualisierung der Sicherheitsverfahren**.
-- **Implementierung neuer Präventionsmaßnahmen**, um zukünftige Vorfälle zu vermeiden.
+- **Implementierung neuer Präventionsmassnahmen**, um zukünftige Vorfälle zu vermeiden.
 
 ---
 
