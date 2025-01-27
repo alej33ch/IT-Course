@@ -50,8 +50,8 @@ Nachdem der Vorfall gelöst wurde, führt das Team eine Post-Mortem-Analyse durc
 ## Vorfallmanagement-Prozess
 
 ```mermaid
+%%{init: {"themeVariables": {"title": "Vorfallmanagement-Prozess"}}}%%
 graph TD
-    title Vorfallmanagement-Prozess
     A[Erkennung des Vorfalls] -->|Benachrichtigung an IT| B(Analyse und Bestätigung)
     B --> C{Schwere des Vorfalls}
     C -->|Malware| D[Malware entfernen]
@@ -65,7 +65,3 @@ graph TD
     I --> J
     J --> K[Wiederherstellung der Systeme]
     K --> L[Nachbesprechung]
-
-    classDef malware fill:#f9f,stroke:#333,stroke-width:4px;
-    class D, G, J malware;
-, G, J malware;
