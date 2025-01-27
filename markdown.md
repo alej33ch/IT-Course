@@ -62,11 +62,13 @@ Dieses Playbook bietet eine klare Anleitung für die Reaktion auf Sicherheitsvor
 ## 🕵️ 3. Analyse  
 
 ### 🛠️ Tools für kleine Teams  
-| **Tool** | **Zweck** |  
-|----------|-----------|  
-| **Canary Tokens** | Einfache Erkennung von Datenlecks |  
-| **VirusTotal** | Schnellscan von Dateien |  
-| **HaveIBeenPwned** | Passwort-Check |  
+```mermaid
+pie
+    title Tools für die Analyse
+    "Canary Tokens": 40
+    "VirusTotal": 35
+    "HaveIBeenPwned": 25
+```
 
 ### 📄 Dokumentationsvorlage  
 ```markdown
@@ -83,11 +85,15 @@ Dieses Playbook bietet eine klare Anleitung für die Reaktion auf Sicherheitsvor
 ## 🔄 4. Wiederherstellung  
 
 ### 💾 Backup-Protokoll  
-1. Letztes "sauberes" Backup identifizieren  
-2. 3-2-1-Regel prüfen:  
-   - 3 Kopien  
-   - 2 verschiedene Medien  
-   - 1 externes Backup  
+```mermaid
+graph TD
+    A[Backup-Strategie] --> B[3 Kopien]
+    A --> C[2 Medien]
+    A --> D[1 externes Backup]
+    B --> E[Sicherheit]
+    C --> E
+    D --> E
+```
 
 ### 📊 Wiederanlaufplan  
 ```mermaid
@@ -116,11 +122,15 @@ graph LR
 ## 🛠️ 6. Prävention  
 
 ### 💡 Kosteneffiziente Maßnahmen  
-| **Maßnahme** | **Kosten** | **Implementierungszeit** |  
-|--------------|------------|--------------------------|  
-| Multi-Faktor-Authentifizierung | Kostenlos (Microsoft Authenticator) | 1 Stunde |  
-| Cloud-Backups (Wasabi/iDrive) | ~20€/Monat | 2 Stunden |  
-| Grundschutz-Training (BSI) | Kostenlos | 30 Min/Monat |  
+```mermaid
+gantt
+    title Präventionsmaßnahmen
+    dateFormat  YYYY-MM-DD
+    section Maßnahmen
+    Multi-Faktor-Auth       :done,    des1, 2023-10-01, 1h
+    Cloud-Backups           :active,  des2, 2023-10-02, 2h
+    Grundschutz-Training    :         des3, 2023-10-03, 30m
+```
 
 ### ✅ Monatliche IT-Checkliste  
 - [ ] Passwort-Rotation für Admin-Konten  
@@ -130,9 +140,14 @@ graph LR
 ---
 
 ## 📞 Notfallkontakte  
-- 🔧 **IT-Primär:** [Telefon/Email]  
-- 🔧 **IT-Backup:** [Telefon/Email]  
-- 🚨 **Externer IT-Notdienst:** [Kontaktdaten]  
+```mermaid
+flowchart LR
+    A[IT-Primär] --> B[IT-Backup]
+    B --> C[Externer IT-Notdienst]
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#bbf,stroke:#333,stroke-width:4px
+    style C fill:#f96,stroke:#333,stroke-width:4px
+```
 
 ---
 
