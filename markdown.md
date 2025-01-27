@@ -43,15 +43,7 @@ Nachdem der Vorfall gelöst wurde, führt das Team eine Post-Mortem-Analyse durc
 
 ---
 
-# Werkzeuge und Ressourcen
-Für eine effiziente Handhabung von Vorfällen ist es wichtig, geeignete Werkzeuge zu haben. Einige empfohlene Werkzeuge sind:
 
-- **GitLab Issues**: Zum Registrieren und Verwalten von Vorfällen.
-- **SIEM (Security Information and Event Management)**: Für die Analyse von Logs.
-- **Antivirus/Schutz vor Malware**: Zur Erkennung und Entfernung von Bedrohungen.
-- **Backups**: Sicherstellen, dass regelmäßige, sichere Backups vorhanden sind.
-
----
 
 ## Vorfallmanagement-Prozess
 
