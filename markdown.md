@@ -45,6 +45,8 @@ Nachdem der Vorfall gelöst wurde, führt das Team eine Post-Mortem-Analyse durc
 
 
 
+# Vorfall-Management Prozess
+
 ## Vorfallmanagement-Prozess
 
 ```mermaid
@@ -66,3 +68,4 @@ graph TD
 
     classDef malware fill:#f9f,stroke:#333,stroke-width:4px;
     class D, G, J malware;
+, G, J malware;
