@@ -51,20 +51,19 @@ graph TD
     A[**Erkennung des Vorfalls**] -->|**Benachrichtigung an IT**| B[**Analyse und Bestätigung**]
     B --> C{**Schwere des Vorfalls**}
     
-    %% Farben für die Knoten
-    classDef erkennung fill:#FFEB3B,stroke:#FF9800;
+    %% Fase de "Erkennung"
     class A,B fill:#FFEB3B,stroke:#FF9800;
     
-    classDef analyse fill:#8BC34A,stroke:#4CAF50;
+    %% Fase de "Analyse"
     class C,D,E,F fill:#8BC34A,stroke:#4CAF50;
     
-    classDef beseitigung fill:#2196F3,stroke:#1976D2;
+    %% Fase de "Beseitigung"
     class G,H,I fill:#2196F3,stroke:#1976D2;
     
-    classDef wiederherstellung fill:#FFC107,stroke:#FF9800;
+    %% Fase de "Wiederherstellung"
     class J,K fill:#FFC107,stroke:#FF9800;
     
-    classDef nachbesprechung fill:#9E9E9E,stroke:#757575;
+    %% Fase de "Nachbesprechung"
     class L fill:#9E9E9E,stroke:#757575;
 
     C -->|**Malware entdeckt**| D[**Malware entfernen**]
