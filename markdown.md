@@ -56,7 +56,7 @@ Für eine effiziente Handhabung von Vorfällen ist es wichtig, geeignete Werkzeu
 ## Vorfallmanagement-Prozess
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Erkennung des Vorfalls]
     B[Analyse und Bestätigung]
     C[Eindämmung]
